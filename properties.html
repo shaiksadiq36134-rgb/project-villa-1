@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties in villa page</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        .header {
+    display: flex;
+      align-items: center;
+      gap: 10px; 
+      padding: 10px 20px;
+  
+    }
+     
+    .header span {
+      font-size: 16px;
+      color: #333;
+    }
+    .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #6d6c6c;
+    }
+    .socialicons{
+        padding-left: 800px;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+       
+    }
+    .socialicons :hover {
+  transform: scale(1.1); 
+    }
+        header{background-color: rgb(253, 253, 253);
+            display: grid;
+    grid-template-columns:30% 70% ;
+
+        }
+            nav{
+            padding-top: 25px;
+        }
+    
+      nav a{
+            color: rgb(11, 10, 10);
+            text-decoration: none;
+            margin: 50px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        nav a:hover{
+            color: orangered;
+        }
+         .col-3divider{
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+  width: 80%;       
+  align-self: center;
+}
+
+        
+.schedule-btn {
+  color: #141111 !important; 
+  font-weight: bold;
+  border: 1px solid #e63946;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #e63946; 
+  color: white; 
+}
+.sadiq {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+} 
+.hero-section {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      background: url('your-image.jpg') center/cover no-repeat;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      background-color: rgba(230, 223, 223, 0.5);
+      padding: px 40px;
+      border-radius: 10px;
+    }
+    
+    .hero-text1 {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: px 40px;
+      border-radius: 10px;
+    }
+    .cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+
+  margin: 80px;
+
+}
+.btn:hover{
+         background-color: rgb(73, 25, 231);
+
+}
+.card{
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.holder{
+  display: flex;
+  padding-left: 600px;
+  gap:30px;
+  padding-bottom: 60px;
+}
+.circle1{
+  width: 50px;
+  height: 50px;
+  background-color: #141111;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.circle2{
+  width: 50px;
+  height: 50px;
+  background-color: orangered;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+    </style>
+    </head>
+<body>
+     <div class="header border border-3px ps-5 ">
+    <img src="../media/image/email-icon.png" alt="" width="30px">
+    <span>info@company.com</span>
+   <span class="divider"></span>
+        <img src="../media/image/maps.png" alt="" width="30px">
+        <span>sunny isles beach,FL 33160</span>
+ 
+    <div class="socialicons">
+        <img src="../media/image/social.png" alt="logo" width="30px">
+        <img src="../media/image/twitter.png" alt="logo" width="30px">
+        <img src="../media/image/linked in.png" alt="logo" width="30px">
+        <img src="../media/image/instagram.png" alt="logo" width="30px">
+    </div>
+    </div>
+    <header class="sadiq">
+      <h1 style="cursor: pointer;">villa</h1>
+    <nav>
+      <a href="home.html">home</a>
+      <a href="properties.html">properties</a>
+      <a href="property details.html">property details</a>
+      <a href="contact.html">contact us</a>
+      <!-- Header Button -->
+<a href="#" class="schedule-btn text-red border border-1px ">
+  <i class="fa-solid fa-calendar-days"></i>
+  Schedule a visit
+</a>
+    </nav>
+    </header>
+</div><br><br><br>
+<div class="hero-section">
+     <img src="../media/image/page-heading-bg.jpg" alt="">
+    <div class="hero-text">
+        
+        <h1>properties/home</h1>
+        </div>
+        <div class="hero-text1">
+        <h1>properties</h1>
+        </div>
+</div>
+<div class=" d-flex gap-5">
+<button style="margin-left: 500px; color: white; background-color: #f42121; border-radius: 10px; border: 1px; padding: 20px;">Show All</button>
+<button style="color: white; background-color: #250c0c; border-radius: 10px; border: 1px; padding: 20px;">Apartment</button>
+<button style="color: white; background-color: #250c0c; border-radius: 10px; border: 1px; padding: 20px;">Villa House</button>
+<button style="color: white; background-color: #250c0c; border-radius: 10px; border: 1px; padding: 20px;">Pent House</button>
+</div>
+
+ 
+
+  <div class="cards">
+    <div class="card" style="width: 20rem;">
+    <img src="../media/image/property-01.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <div class="d-flex gap-5">
+    <h6 class="card-title border border-1px rounded-1 bg-warning p-1">LUXURY VILLA</h6>
+    <h5 style="color: red;">$2.264.00</h5>
+    </div>
+    <h6><b>18 New Street Miami, OR 97219</b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>8</b></p>
+     <p class="card-text">Bathrooms: <b>8</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>545m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>6 spots</b></p>
+    
+    </div>
+      <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-02.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-success p-1">LUXURY VILLA</h5>
+    <h5 style="color: red;">$1.180.000</h5>
+    </div>
+        <h6><b>54 Mid street florida,OR 27001 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>6</b></p>
+     <p class="card-text">Bathrooms: <b>5</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>450m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>8 spots</b></p>
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-warning">LUXURY VILLA</h5>
+    <h5 style="color: red;">$1.46.000</h5>
+    </div>
+            <h6><b>28 Old Street Maimi OR 38540 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>5</b></p>
+     <p class="card-text">Bathrooms: <b>4</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>220m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>10spots</b></p>
+    </div>
+<button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+
+ <div class="card" style="width: 20rem;">
+  <img src="../media/image/property-04.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h6 class="card-title border border-1px rounded-1 bg-warning p-1">Apartment</h6>
+    <h5 style="color: red;">$584.500</h5>
+    </div>
+    <h6><b>12 New Street Miami, OR 12650</b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>4</b></p>
+     <p class="card-text">Bathrooms: <b>3</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>125m2</b></p>
+      <p class="card-text">Floor: <b>25TH</b></p>
+      <p class="card-text">parking: <b>2 CARS</b></p>
+    
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-05.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-success p-1">PentHouse</h5>
+    <h5 style="color: red;">$935.600</h5>
+    </div>
+        <h6><b>34 Beach Street Miami OR 42680 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>4</b></p>
+     <p class="card-text">Bathrooms: <b>4</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>180m2</b></p>
+      <p class="card-text">Floor: <b>38th</b></p>
+      <p class="card-text">parking: <b>2 cars</b></p>
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-06.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-warning">Modren Condo</h5>
+    <h5 style="color: red;">$450.000</h5>
+    </div>
+            <h6><b>22 New Street Portland OR 16540 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>3</b></p>
+     <p class="card-text">Bathrooms: <b>2</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>156m2</b></p>
+      <p class="card-text">Floor: <b>26th</b></p>
+      <p class="card-text">parking: <b>3 cars</b></p>
+    </div>
+<button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+</div>
+<div class="cards">
+    <div class="card" style="width: 20rem;">
+    <img src="../media/image/property-01.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <div class="d-flex gap-5">
+    <h6 class="card-title border border-1px rounded-1 bg-warning p-1">LUXURY VILLA</h6>
+    <h5 style="color: red;">$2.264.00</h5>
+    </div>
+    <h6><b>18 New Street Miami, OR 97219</b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>8</b></p>
+     <p class="card-text">Bathrooms: <b>8</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>545m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>6 spots</b></p>
+    
+    </div>
+      <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-02.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-success p-1">LUXURY VILLA</h5>
+    <h5 style="color: red;">$1.180.000</h5>
+    </div>
+        <h6><b>54 Mid street florida,OR 27001 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>6</b></p>
+     <p class="card-text">Bathrooms: <b>5</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>450m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>8 spots</b></p>
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-warning">LUXURY VILLA</h5>
+    <h5 style="color: red;">$1.46.000</h5>
+    </div>
+            <h6><b>28 Old Street Maimi OR 38540 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>5</b></p>
+     <p class="card-text">Bathrooms: <b>4</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>220m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>10spots</b></p>
+    </div>
+<button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+</div>
+<div class="holder">
+<div class="circle1">1</div>
+<div class="circle2">2</div>
+<div class="circle1">3</div>
+<div class="circle1">>></div>
+</div>
+ <footer style="background-color: rgb(52, 44, 44); text-align: center; padding: 20px; color: white; cursor: pointer;">
+    <p>copyrights@2048 Villa Agency co.,ltd All Rights Reserved.design by:shaik sadiq</p>
+  </footer>
+    
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
