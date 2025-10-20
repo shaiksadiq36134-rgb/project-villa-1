@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>properties in villa page</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        .header {
+    display: flex;
+      align-items: center;
+      gap: 10px; 
+      padding: 10px 20px;
+  
+    }
+     
+    .header span {
+      font-size: 16px;
+      color: #333;
+    }
+    .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #6d6c6c;
+    }
+    .socialicons{
+        padding-left: 800px;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+       
+    }
+    .socialicons :hover {
+  transform: scale(1.1); 
+    }
+        header{background-color: rgb(253, 253, 253);
+            display: grid;
+    grid-template-columns:30% 70% ;
+
+        }
+            nav{
+            padding-top: 25px;
+        }
+    
+      nav a{
+            color: rgb(11, 10, 10);
+            text-decoration: none;
+            margin: 50px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        nav a:hover{
+            color: orangered;
+        }
+         .col-3divider{
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+  width: 80%;       
+  align-self: center;
+}
+
+        
+.schedule-btn {
+  color: #141111 !important; 
+  font-weight: bold;
+  border: 1px solid #e63946;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #e63946; 
+  color: white; 
+}
+.sadiq {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+.hero{
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      background-color: rgba(230, 223, 223, 0.5);
+      padding: px 40px;
+      border-radius: 10px;
+    }
+    
+    .hero-text1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: px 40px;
+      border-radius: 10px;
+    }
+    .name{
+        display: flex;
+        flex: wrap;
+        gap: 200px;
+        padding-top: 200px;
+    }
+    .accordion-button:hover {
+  color: orange;
+    }
+    .orange-btn{
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: larger;
+  background-color: orange;
+  color: white  ;
+  margin-left: 500px;
+}
+.black-btn{
+    width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: larger;
+  background-color: rgb(23, 22, 20);
+  color: white  ;
+}
+</style>
+    </head>
+<body>
+     <div class="header border border-3px ps-5 ">
+    <img src="../media/image/email-icon.png" alt="" width="30px">
+    <span>info@company.com</span>
+   <span class="divider"></span>
+        <img src="../media/image/maps.png" alt="" width="30px">
+        <span>sunny isles beach,FL 33160</span>
+ 
+    <div class="socialicons">
+        <img src="../media/image/social.png" alt="logo" width="30px">
+        <img src="../media/image/twitter.png" alt="logo" width="30px">
+        <img src="../media/image/linked in.png" alt="logo" width="30px">
+        <img src="../media/image/instagram.png" alt="logo" width="30px">
+    </div>
+    </div>
+    <header class="sadiq">
+      <h1 style="cursor: pointer;">villa</h1>
+    <nav>
+      <a href="home.html">home</a>
+      <a href="properties.html">properties</a>
+      <a href="property details.html">property details</a>
+      <a href="contact.html">contact us</a>
+      <!-- Header Button -->
+<a href="#" class="schedule-btn text-red border border-1px ">
+  <i class="fa-solid fa-calendar-days"></i>
+  Schedule a visit
+</a>
+    </nav>
+    </header>
+</div><br><br><br>
+<div class="hero-section">
+     <img src="../media/image/page-heading-bg.jpg" alt="">
+        <div class="hero">
+        <h1 > Single/properties</h1>
+        </div>
+        <div class="hero-text1">
+            <h1>SINGLE PROPERTY</h1>
+        </div>
+</div>
+    <div class="container">
+        <div class="name">
+            <img src="../media/image/property-01.jpg" alt="" width="700px" height="600px">
+            <div class="col-4 border border-1px pt-4 rounded-4 ">
+    <div class="d-flex gap-5">
+<img src="../media/image/info-icon-01.png" alt="logo1">
+<h1>250 m2</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">Total Flat Space</p>
+  <hr class="dividers">
+  <div class="d-flex gap-5 ">
+    <img src="../media/image/info-icon-02.png" alt="">
+    <h1>Contract</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">Contract Ready</p>
+  <hr class="dividers">
+  <div class="d-flex gap-5 ">
+    <img src="../media/image/info-icon-03.png" alt="">
+    <h1>Payment</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">Payment Process</p>
+  <hr class="dividers">
+  <div class="d-flex gap-5">
+    <img src="../media/image/info-icon-04.png" alt="">
+    <h1>Safetey</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">24/7 Under Control</p>
+ </div> 
+</div><br><br>
+<h1 style="background-color: pink; width: 200px;">Apartment</h1><br><br><br>
+     <h1 class="pb-5">24 New Street Miami ,OR 24560</h1>
+     <p>Get the best <b>villa agency HTML</b> CSS Bootstrap Template for your company website. XYZ provides you the best service in <br>
+         the world. Please tell your friends about it. Thank you. Cloud bread kogi bitters pitchfork shoreditch tumblr yr succul <br>entssingle-origin coffee schlitz enamel pin you probably haven’t heard of them ugh hella.</p>
+
+<p>When you look for best websites, you can simply type XYZ in any search engine website. In addition, you can type XYZ Digital  <br>Marketing,  XYZ Corporate  Layouts, etc. Master cleanse +1 intelligentsia swag post-ironic, slow-carb chambray knausgaard PBR&B  brDSA poutine  neutra cardigan hoodie pop-up.</h5>
+    <div class="container">
+        <div class="row">
+         <div class="col-8">
+            <div class="accordion accordion-flush pt-4" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Best Use ful Links ?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Get <b>the best villa </b> website templates in html css and Bootstrap for your business. sadiq provides you the <code>best service</code> in the world. please tell your friends about it.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        How does it works?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Dolor <b>almesit amet,</b>consectuter adipicing elit, said doesn't eiumosmod tempor incidunt ut labure consectetir <code>adipising</code>elit,sed du eiusmod tempour incident at labure consecent</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header"> 
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Why Villa agency is best ?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet <b>consectetur adipisicing elit.</b> Delectus, rerum autem harum amet enim rem nam neque repellat velit tenetur, minus praesentium odio dolorum <code>blanditiis veniam,</code> incidunt ullam. Omnis, saepe.</div>
+    </div>
+  </div>
+</div>
+  </div>
+         </div>
+        </div>
+    </div>
+
+     <div class="container d-flex border-1px " style="padding-top: 40px;">
+      <div class="d-block">
+        <h1 class="text-danger">| Best DEALS</h1>
+        <h1>Find Your Best Deal</h1>
+        <h1>Right Now!</h1>
+        </div>
+    
+      <div class="d-flex gap-5">
+        <button class="orange-btn">Apartment</button>
+        <button class="black-btn">VillaHouse</button>
+        <button class="black-btn">PentHouse</button>
+      </div>
+      </div>
+      <div class="bg-white mb-6 mt-6 p-5 rounded shadow-lg">
+    <div class=" row mb-3 mt-4">
+      <div class="col-md-3 border border-1px pt-4 rounded-3">
+        <div class="d-flex gap-5">
+          <p>Total Flat Space</p>
+          <h2 class="">182 m2</h2>
+          </div>
+          <hr class="dividers">
+        <div class="d-flex gap-5">
+          <p>Floor number</p>
+          <h2 class="">26th</h2>
+        </div>
+        <hr class="dividers">
+        <div class="d-flex gap-5 ">
+          <p>Number of rooms</p>
+          <h2 class="">4</h2>
+        </div>
+        <hr class="dividers">
+        <div class="d-flex gap-5 ">
+          <p>Parking Available</p>
+          <h2 class="">Yes</h2>
+        </div>
+        <hr class="dividers">
+        <div class="d-flex gap-5 ">
+          <p>Payment Process</p>
+          <h2 class="">Bank</h2>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="../media/image/deal-01.jpg" alt="image" width="500px">
+      </div><br>
+      <div class="col-md-4 border border-1px pt-4 rounded-3">
+        <h3>Extra Info About Property</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p><br>
+        <p>When you need best websites,you can simply type Mubarak in any search engine website.In addition,you can type Mubarak Portfolio,Mubarak One Page Layout,etc.</p>
+      
+       <a href="#" class="schedule-btn text-danger border border-5 ">
+             <i class="fa-solid fa-calendar-days"></i>
+                 Schedule a visit
+          </a>
+    </div>
+    </div>
+    </div>
+    <footer style="background-color: rgb(52, 44, 44); text-align: center; padding: 20px; color: white; cursor: pointer;">
+    <p>copyrights@2048 Villa Agency co.,ltd All Rights Reserved.design by:shaik sadiq</p>
+  </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
