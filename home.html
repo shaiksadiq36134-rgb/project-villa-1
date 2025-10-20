@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>villla page design by html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .header {
+    display: flex;
+      align-items: center;
+      gap: 10px; 
+      padding: 10px 20px;
+  
+    }
+     
+    .header span {
+      font-size: 16px;
+      color: #333;
+    }
+    .divider {
+  width: 1px;
+  height: 20px;
+  background-color: #6d6c6c;
+    }
+    .socialicons{
+        padding-left: 800px;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+       
+    }
+    .socialicons :hover {
+  transform: scale(1.1); 
+    }
+        header{background-color: rgb(253, 253, 253);
+            display: grid;
+    grid-template-columns:30% 70% ;
+
+        }
+            nav{
+            padding-top: 25px;
+        }
+    
+      nav a{
+            color: rgb(11, 10, 10);
+            text-decoration: none;
+            margin: 50px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        nav a:hover{
+            color: orangered;
+        }
+         .col-3divider{
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+  width: 80%;       
+  align-self: center;
+}
+
+        
+.schedule-btn {
+  color: #141111 !important; 
+  font-weight: bold;
+  border: 1px solid #e63946;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.schedule-btn:hover {
+  background-color: #e63946; 
+  color: white; 
+}
+.carousel-item img {
+  object-fit: cover;
+  filter: brightness(70%); 
+}
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-caption-custom h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.location-tag {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.location-tag span {
+  color: #e63946; 
+  font-weight: 700;
+}
+.pt-5{
+  padding-top: 200px !important;
+  margin: 50px  ;
+}
+.accordion-button:hover {
+  color: orange;
+
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.villa-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.property-icon {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px;     
+  width: 60px;    
+  height: auto;
+  opacity: 0.9;   
+}
+.box1 {
+      position: absolute;
+      /* top: 700px; */
+      width: 80px;
+      height: 50px;
+      background: lightblue;
+      z-index: 1;
+      margin-top: 600px;
+    }
+    .box2 {
+      position: absolute;
+      border-radius: 90px;
+      top: 1200px;
+    right: 600px;
+      width: 80px;
+      height: 50px;
+      background: orange;
+      z-index: 2;
+    margin:550px 
+  }
+  
+  .play-icon {
+    position: absolute;
+    top: 560%;    
+    left: 600%; 
+    transform: translate(-50%, -50%);
+    font-size: 70px; 
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .play-icon:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    color: red  ;
+  }
+  .containers{
+     padding-top: 800px; 
+  }
+ .stats-section {
+      background-color: #fff;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    /* Card styling */
+    .stat-card {
+      position: relative;
+      background-color: #efc1c1;
+      border-radius: 12px;
+      padding: 30px 20px;
+      margin: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* The orange-red circle */
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 40px;
+      height: 40px;
+      background-color: #ff4500;
+      border-radius: 50%;
+    }
+
+    /* Number text */
+    .stat-number {
+      font-size: 40px;
+      font-weight: 700;
+      color: #ff4500;
+      margin-bottom: 5px;
+    }
+
+    /* Description text */
+    .stat-text {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.4;
+      font-weight: bolder
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .stat-card {
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+    .sadiq
+    {
+      padding: 20px;
+    }
+   
+.orange-btn{
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: larger;
+  background-color: orangered;
+  color: white  ;
+  margin-left: 500px;
+}
+.black-btn{
+    width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: larger;
+  background-color: rgb(23, 22, 20);
+  color: white  ;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  padding-top: 90px;
+  margin: 80px;
+
+}
+.btn:hover{
+         background-color: orangered;
+
+}
+.card{
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.1);
+
+
+}
+.sadiq {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}     
+   .contact-section {
+      background: url('../media/image/contact-bg\ \(2\).jpg') no-repeat center center/cover;
+      width: 10000px;
+      height: 700px;
+      padding-top: 500px;
+   }
+   
+    .hero-text {
+      position: absolute;
+      top: 96%;
+      left: 1000%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      /* background-color: rgba(230, 223, 223, 0.5); */
+      padding: px 40px;
+      border-radius: 10px;
+    }
+    .hero-text1 {
+      position: absolute;
+      top: 280%;
+      left: 1000%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: px 40px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header border border-3px ps-5 ">
+    <img src="../media/image/email-icon.png" alt="" width="30px">
+    <span>info@company.com</span>
+   <span class="divider"></span>
+        <img src="../media/image/maps.png" alt="" width="30px">
+        <span>sunny isles beach,FL 33160</span>
+ 
+    <div class="socialicons">
+        <img src="../media/image/social.png" alt="logo" width="30px">
+        <img src="../media/image/twitter.png" alt="logo" width="30px">
+        <img src="../media/image/linked in.png" alt="logo" width="30px">
+        <img src="../media/image/instagram.png" alt="logo" width="30px">
+    </div>
+    </div>
+    <header class="sadiq">
+      <h1 style="cursor: pointer;">villa</h1>
+    <nav>
+      <a href="home.html">home</a>
+      <a href="properties.html">properties</a>
+      <a href="property details.html">property details</a>
+      <a href="contact.html">contact us</a>
+      <!-- Header Button -->
+<a href="#" class="schedule-btn text-red border border-1px ">
+  <i class="fa-solid fa-calendar-days"></i>
+  Schedule a visit
+</a>
+    </nav>
+    </header>
+</div>
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../media/image/banner-01 (1).jpg" class="d-block w-100" alt="Villa" height="500">
+      <div class="carousel-caption-custom">
+        <div class="location-tag">Toronto, <span>Canada</span></div>
+        <h1>HURRY!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../media/image/banner-02.jpg" class="d-block w-100" alt="Villa" height="500">
+
+      <div class="carousel-caption-custom">
+        <div class="location-tag">Miami, <span>USA</span></div>
+        <h1>LUXURY<br>BEACHSIDE<br>VILLAS</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../media/image/banner-03.jpg" class="d-block w-100" alt="Villa" height="500">
+
+      <div class="carousel-caption-custom">
+        <div class="location-tag">Dubai, <span>UAE</span></div>
+        <h1>EXPERIENCE<br>ELITE<br>LIVING</h1>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container d-grid pt-5">
+  <div class="row"> 
+    <div class="col-4">
+      <div class="image-container">
+  <img src="../media/image/featured.jpg" alt="platform" class="villa-image">
+  <img src="../media/image/property-document_13390614.png" alt="property icon" class="property-icon">
+  </div>
+  </div>
+  <div class="col-4">
+  <h3 class="text-primary p-3">Features</h3>
+  <h1>Best Apartment</h1>
+  <h1>& Sea view</h1>
+  <!-- accordian -->
+  <div class="accordion accordion-flush pt-4" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Best Use ful Links ?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Get <b>the best villa </b> website templates in html css and Bootstrap for your business. sadiq provides you the <code>best service</code> in the world. please tell your friends about it.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        How does it works?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Dolor <b>almesit amet,</b>consectuter adipicing elit, said doesn't eiumosmod tempor incidunt ut labure consectetir <code>adipising</code>elit,sed du eiusmod tempour incident at labure consecent</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header"> 
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Why Villa agency is best ?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet <b>consectetur adipisicing elit.</b> Delectus, rerum autem harum amet enim rem nam neque repellat velit tenetur, minus praesentium odio dolorum <code>blanditiis veniam,</code> incidunt ullam. Omnis, saepe.</div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="col-4 border border-1px pt-4 rounded-4 ">
+    <div class="d-flex gap-5">
+<img src="../media/image/info-icon-01.png" alt="logo1">
+<h1>250 m2</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">Total Flat Space</p>
+  <hr class="dividers">
+  <div class="d-flex gap-5 ">
+    <img src="../media/image/info-icon-02.png" alt="">
+    <h1>Contract</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">Contract Ready</p>
+  <hr class="dividers">
+  <div class="d-flex gap-5 ">
+    <img src="../media/image/info-icon-03.png" alt="">
+    <h1>Payment</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">Payment Process</p>
+  <hr class="dividers">
+  <div class="d-flex gap-5">
+    <img src="../media/image/info-icon-04.png" alt="">
+    <h1>Safetey</h1>
+  </div>
+  <p style="text-align: center; font-size: large;">24/7 Under Control</p>
+ </div> 
+</div>
+<div class="box1">
+  <img src="../media/image/video-bg.jpg" alt="" width="1500px">
+   <div class="hero-text">
+        
+        <h1 style="color: red;">|videoview</h1>
+        </div>
+        <div class="hero-text1">
+          <h1>Get CloserView&</h1>
+          <h1>DifferentFeeling</h1>
+        </div>
+      
+  
+  </div>
+  <div class="box2">
+  <img src="../media/image/video-frame.jpg">
+   <div class="play-icon"><i class="fa-solid fa-circle-play"></i></div>
+</div>
+</div>
+
+
+<section class="stats-section">
+    <div class="containers">
+      <div class="row justify-content-center">
+
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="stat-number">34</div>
+            <div class="stat-text">Buildings<br>Finished Now</div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="stat-number">12</div>
+            <div class="stat-text">Years<br>Experience</div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="stat-card">
+            <div class="stat-number">24</div>
+            <div class="stat-text">Awards<br>Won 2023</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+   </section>
+    <div class="container d-flex border-1px " style="padding-top: 40px;">
+      <div class="d-block">
+        <h1 class="text-danger">| Best DEALS</h1>
+        <h1>Find Your Best Deal</h1>
+        <h1>Right Now!</h1>
+        </div>
+    
+      <div class="d-flex gap-5">
+        <button class="orange-btn">Apartment</button>
+        <button class="black-btn">VillaHouse</button>
+        <button class="black-btn">PentHouse</button>
+      </div>
+    </div>
+      <div class="bg-white mb-6 mt-6 p-5 rounded shadow-lg">
+    <div class=" row mb-3 mt-4">
+      <div class="col-md-3 border border-1px pt-4 rounded-3">
+        <div class="d-flex gap-5">
+          <p>Total Flat Space</p>
+          <h2 class="">182 m2</h2>
+          </div>
+          <hr class="dividers">
+        <div class="d-flex gap-5">
+          <p>Floor number</p>
+          <h2 class="">26th</h2>
+        </div>
+        <hr class="dividers">
+        <div class="d-flex gap-5 ">
+          <p>Number of rooms</p>
+          <h2 class="">4</h2>
+        </div>
+        <hr class="dividers">
+        <div class="d-flex gap-5 ">
+          <p>Parking Available</p>
+          <h2 class="">Yes</h2>
+        </div>
+        <hr class="dividers">
+        <div class="d-flex gap-5 ">
+          <p>Payment Process</p>
+          <h2 class="">Bank</h2>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img src="../media/image/deal-01.jpg" alt="image" width="500px">
+      </div><br>
+      <div class="col-md-4 border border-1px pt-4 rounded-3">
+        <h3>Extra Info About Property</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p><br>
+        <p>When you need best websites,you can simply type Mubarak in any search engine website.In addition,you can type Mubarak Portfolio,Mubarak One Page Layout,etc.</p>
+      
+       <a href="#" class="schedule-btn text-danger border border-5 ">
+             <i class="fa-solid fa-calendar-days"></i>
+                 Schedule a visit
+          </a>
+    </div>
+    </div>
+    <h3 style="color: orange; text-align: center; padding-top: 90px;">|properties</h3>
+    <h1 style="color: black; text-align: center; ">We provide The Best</h1>
+    <h1 style="color: black; text-align: center;">Property you Like</h1>
+  </div>
+
+  <div class="cards">
+    <div class="card" style="width: 20rem;">
+    <img src="../media/image/property-01.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <div class="d-flex gap-5">
+    <h6 class="card-title border border-1px rounded-1 bg-warning p-1">LUXURY VILLA</h6>
+    <h5 style="color: red;">$2.264.00</h5>
+    </div>
+    <h6><b>18 New Street Miami, OR 97219</b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>8</b></p>
+     <p class="card-text">Bathrooms: <b>8</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>545m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>6 spots</b></p>
+    
+    </div>
+      <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-02.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-success p-1">LUXURY VILLA</h5>
+    <h5 style="color: red;">$1.180.000</h5>
+    </div>
+        <h6><b>54 Mid street florida,OR 27001 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>6</b></p>
+     <p class="card-text">Bathrooms: <b>5</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>450m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>8 spots</b></p>
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-03.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-warning">LUXURY VILLA</h5>
+    <h5 style="color: red;">$1.46.000</h5>
+    </div>
+            <h6><b>28 Old Street Maimi OR 38540 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>5</b></p>
+     <p class="card-text">Bathrooms: <b>4</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>220m2</b></p>
+      <p class="card-text">Floor: <b>3</b></p>
+      <p class="card-text">parking: <b>10spots</b></p>
+    </div>
+<button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+
+ <div class="card" style="width: 20rem;">
+  <img src="../media/image/property-04.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h6 class="card-title border border-1px rounded-1 bg-warning p-1">Apartment</h6>
+    <h5 style="color: red;">$584.500</h5>
+    </div>
+    <h6><b>12 New Street Miami, OR 12650</b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>4</b></p>
+     <p class="card-text">Bathrooms: <b>3</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>125m2</b></p>
+      <p class="card-text">Floor: <b>25TH</b></p>
+      <p class="card-text">parking: <b>2 CARS</b></p>
+    
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-05.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-success p-1">PentHouse</h5>
+    <h5 style="color: red;">$935.600</h5>
+    </div>
+        <h6><b>34 Beach Street Miami OR 42680 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>4</b></p>
+     <p class="card-text">Bathrooms: <b>4</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>180m2</b></p>
+      <p class="card-text">Floor: <b>38th</b></p>
+      <p class="card-text">parking: <b>2 cars</b></p>
+    </div>
+ <button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+  <img src="../media/image/property-06.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="d-flex gap-5">
+    <h5 class="card-title border border-1px rounded-1 bg-warning">Modren Condo</h5>
+    <h5 style="color: red;">$450.000</h5>
+    </div>
+            <h6><b>22 New Street Portland OR 16540 </b></h6><br>
+    <div class="d-flex gap-5">
+    <p class="card-text">Bed Rooms: <b>3</b></p>
+     <p class="card-text">Bathrooms: <b>2</b></p>
+     </div>
+     <div class="d-flex gap-2">
+      <p class="card-text">Area: <b>156m2</b></p>
+      <p class="card-text">Floor: <b>26th</b></p>
+      <p class="card-text">parking: <b>3 cars</b></p>
+    </div>
+<button class="btn btn-dark rounded-pill  w-100">schedule a visit</button>
+  </div>
+</div>
+  <section class="contact-section">
+    <div class="container">
+     <div class="row">
+       <div class="col-md-6 mb-4 mb-md-0 ">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.8835791998686!2d-80.12563132485858!3d25.939669977245334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adf9f7b07fcd%3A0x9ff1e6993e030d7d!2sSunny%20Isles%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1696400000000!5m2!1sen!2sus"
+            width="100%" height="400"
+            style="border:0; border-radius: 15px; top: 300px;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="col-md-6 ">
+          <form class="p-4 bg-white rounded-4 shadow-sm">
+            <div class="mb-3">
+              <input type="text" class="form-control rounded-pill" placeholder="Full Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control rounded-pill" placeholder="Email Address">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control rounded-pill" placeholder="Subject">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control rounded-4" rows="3" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 rounded-pill">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section><br><br><br><br><br><br><br>
+  <div class="container my-5">
+    <div class="row  g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 p-4 text-center">
+          <div class="text-danger fs-1 mb-3">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h5 class="fw-bold mb-1">010-020-0340</h5>
+          <p class="text-muted mb-0">Phone Number</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 p-4 text-center">
+          <div class="text-danger fs-1 mb-3">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h5 class="fw-bold mb-1">info@villa.co</h5>
+          <p class="text-muted mb-0">Business Email</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="background-color: rgb(52, 44, 44); text-align: center; padding: 20px; color: white; cursor: pointer;">
+    <p>copyrights@2048 Villa Agency co.,ltd All Rights Reserved.design by:shaik sadiq</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
